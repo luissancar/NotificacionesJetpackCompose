@@ -59,7 +59,8 @@ fun Greeting() {
        Button(
            modifier = Modifier
                .padding(20.dp)
-               .size(100.dp),
+               .height(100.dp)
+               .fillMaxWidth(),
 
            colors = ButtonDefaults.buttonColors(backgroundColor = Color.Yellow),
            shape = RoundedCornerShape(25),
@@ -76,9 +77,11 @@ fun Greeting() {
         Button(
             modifier = Modifier
                 .padding(20.dp)
-                .size(100.dp),
+                .height(100.dp)
+                .fillMaxWidth()
+                ,
             colors = ButtonDefaults.buttonColors(backgroundColor = Color.Red),
-            shape = RoundedCornerShape(50),
+            shape = RoundedCornerShape(25),
             onClick = {
                 textoLargoNotification(channelId = channelId, context = context, notificationId = notificationId,
                     textContent = "Notificación texto largo, Notificación texto largo, Notificación texto largo, Notificación texto largo, Notificación texto largo, Notificación texto largo, ",
@@ -94,9 +97,10 @@ fun Greeting() {
         Button(
             modifier = Modifier
                 .padding(20.dp)
-                .size(100.dp),
+                .height(100.dp)
+                .fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(backgroundColor = Color.Green),
-            shape = RoundedCornerShape(10),
+            shape = RoundedCornerShape(25),
             onClick = {
                 textoConIconoNotificacion(iconoGrande = myBitmap, channelId = channelId, context = context, notificationId = notificationId, textContent = "Notificación con icono", textTitle = "Notificación",)
 
@@ -109,9 +113,10 @@ fun Greeting() {
         Button(
             modifier = Modifier
                 .padding(20.dp)
-                .size(100.dp),
+                .height(100.dp)
+                .fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray),
-            shape = RoundedCornerShape(5),
+            shape = RoundedCornerShape(25),
             onClick = {
                 imagenGrandeNotification(iconoGrande = myBitmap, channelId = channelId, context = context, notificationId = notificationId, textContent = "Notificación imagen grande", textTitle = "Notificación",)
 
